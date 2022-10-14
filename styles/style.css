@@ -6,17 +6,12 @@
   color: #000000;
 }
 
-div {
-  outline: 1px solid red;
-}
-
-/* ---------Выше расположены стили для header--------- */
+/* ---------Ниже расположены стили для header--------- */
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  outline: 1px solid red;
   background: #f2f2f2;
   margin: 0;
   padding-left: 64px;
@@ -24,8 +19,29 @@ div {
   display: flex;
 }
 
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 228px;
+  height: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 2;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+}
+
 .header__title {
-  outline: 1px solid red;
   padding: 0;
   width: 730px;
   align-self: center;
@@ -37,7 +53,6 @@ div {
 }
 
 .header__subtitle {
-  outline: 1px solid red;
   margin: 0;
   padding: 0;
   width: 388px;
@@ -51,7 +66,6 @@ div {
 }
 
 .header__link {
-  outline: 1px solid red;
   text-decoration: none;
   color: #2f80ed;
 }
@@ -79,24 +93,6 @@ div {
   position: absolute;
   top: 64px;
   right: 0;
-}
-
-.logo {
-  margin: 0;
-  padding: 0;
-  width: 228px;
-  height: 32px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.logo_place_header {
-  background-image: url(../images/logo_place_header.svg);
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  z-index: 2;
 }
 
 /* ---------Ниже расположены стили для блока description--------- */
@@ -151,7 +147,6 @@ div {
 /* ---------Ниже расположены стили для блока digits--------- */
 
 .digits {
-  outline: 1px solid green;
   margin: 0;
   padding: 100px 0;
   display: flex;
@@ -159,7 +154,6 @@ div {
 }
 
 .section-title {
-  outline: 1px solid green;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -174,7 +168,6 @@ div {
 }
 
 .section-subtitle {
-  outline: 1px solid green;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -189,7 +182,6 @@ div {
 }
 
 .table {
-  outline: 1px solid green;
   width: 1100px;
   margin: 0 auto;
   padding: 0;
@@ -204,7 +196,6 @@ div {
 }
 
 .table__cell {
-  outline: 1px solid red;
   width: 250px;
   margin-top: 60px;
 }
@@ -217,7 +208,6 @@ div {
 }
 
 .table__heading {
-  outline: 1px solid green;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -226,7 +216,6 @@ div {
 }
 
 .table__text {
-  outline: 1px solid green;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -241,7 +230,6 @@ div {
 /* ---------Ниже расположены стили для блока feynman--------- */
 
 .feynman {
-  outline: 1px solid blue;
   margin: 0;
   padding-top: 100px;
   height: 790px;
@@ -252,7 +240,6 @@ div {
 }
 
 .feynman__title {
-  outline: 1px solid blue;
   margin: 0 auto 70px;
   width: 648px;
   line-height: 1.15;
@@ -263,7 +250,6 @@ div {
 }
 
 .feynman__subtitle {
-  outline: 1px solid blue;
   margin: 0 auto;
   line-height: 51px;
   font-size: 36px;
@@ -273,7 +259,6 @@ div {
 }
 
 .feynman__link {
-  outline: 1px solid blue;
   position: absolute;
   right: 48px;
   top: 50%;
@@ -285,7 +270,6 @@ div {
 }
 
 .feynman__photo {
-  outline: 1px solid blue;
   width: 867px;
   height: 637px;
   background-size: cover;
@@ -299,7 +283,6 @@ div {
 /* ---------Ниже расположены стили для блока kaufman--------- */
 
 .kaufman {
-  outline: 1px solid green;
   background-color: #1f1f1f;
   margin: 0;
   padding: 90px 0 90px;
@@ -323,7 +306,6 @@ div {
 /* ---------Ниже расположены стили для блока footer--------- */
 
 .footer {
-  outline: 1px solid purple;
   min-height: 350px;
   padding: 60px 0 40px;
   background-color: #1f1f1f;
@@ -346,10 +328,6 @@ div {
   align-items: flex-start;
 }
 
-.logo_place_footer {
-  background-image: url(../images/logo_place_footer.svg);
-}
-
 .footer__author {
   margin: 18px 0;
   line-height: 25px;
@@ -363,19 +341,19 @@ div {
   flex-direction: column;
 }
 
+.footer__column-heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
   color: white;
-}
-
-.footer__column-heading {
-  margin: 0;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 600;
 }
 
 .footer__social-icon {
