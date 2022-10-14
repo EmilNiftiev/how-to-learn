@@ -3,7 +3,7 @@
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  color: #000000;
+  color: #000;
 }
 
 /* ---------Ниже расположены стили для header--------- */
@@ -43,7 +43,8 @@
 
 .header__title {
   padding: 0;
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
   align-self: center;
   margin: 0;
   line-height: 96px;
@@ -55,7 +56,8 @@
 .header__subtitle {
   margin: 0;
   padding: 0;
-  width: 388px;
+  max-width: 388px;
+  width: 100%;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -70,7 +72,7 @@
   color: #2f80ed;
 }
 
-.header__main-ilustration {
+.header__main-illustration {
   margin: 0;
   padding: 0;
   width: 765px;
@@ -116,7 +118,8 @@
 
 .description__brief {
   margin: 0;
-  width: 175px;
+  max-width: 175px;
+  width: 100%;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -141,6 +144,8 @@
 }
 
 .two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -163,7 +168,7 @@
 }
 
 .section-title_theme_dark {
-  color: white;
+  color: #fff;
   z-index: 1;
 }
 
@@ -177,7 +182,7 @@
 }
 
 .section-subtitle_theme_dark {
-  color: white;
+  color: #fff;
   z-index: 1;
 }
 
@@ -202,7 +207,7 @@
 
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
+  color: #fff;
   margin-top: 80px;
   z-index: 1;
 }
@@ -232,7 +237,7 @@
 .feynman {
   margin: 0;
   padding-top: 100px;
-  height: 790px;
+  min-height: 790px;
   background: #f2f2f2;
   position: relative;
   display: flex;
@@ -241,7 +246,8 @@
 
 .feynman__title {
   margin: 0 auto 70px;
-  width: 648px;
+  max-width: 648px;
+  width: 100%;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -254,7 +260,6 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  display: inline-block;
   z-index: 1;
 }
 
@@ -293,6 +298,7 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
   background-size: cover;
@@ -301,6 +307,7 @@
   position: absolute;
   top: 0;
   right: -210px;
+  z-index: 1;
 }
 
 /* ---------Ниже расположены стили для блока footer--------- */
@@ -309,7 +316,7 @@
   min-height: 350px;
   padding: 60px 0 40px;
   background-color: #1f1f1f;
-  color: white;
+  color: #fff;
   display: flex;
 }
 
@@ -337,8 +344,10 @@
 
 .footer__column-links {
   margin: 20px 0 16px;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  list-style: none;
 }
 
 .footer__column-heading {
@@ -353,7 +362,7 @@
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 .footer__social-icon {
