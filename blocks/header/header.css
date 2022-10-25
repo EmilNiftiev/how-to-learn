@@ -7,4 +7,5 @@
   padding-left: 64px;
   position: relative;
   display: flex;
+  overflow: hidden;
 }
