@@ -6,7 +6,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-.video__iframes li {
-  font-size: 0; /* Обнулил, чтобы к заданным размерам фрейма не прибавлялись размеры строки. (Увеличивалась высота) */
-}

@@ -6,7 +6,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-.resources__logo-zone li {
-  font-size: 0; /* Обнулил, чтобы к заданным размерам ячейки не прибавлялись размеры строки. (Увеличивалась высота) */
-}
